@@ -1,0 +1,21 @@
+.App {
+  margin: 0;
+  padding: 0;
+}
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+/*# sourceMappingURL=App.css.map */

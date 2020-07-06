@@ -1,0 +1,109 @@
+.quote-box {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 20vh;
+  bottom: 20vh;
+  left: 20vw;
+  right: 20vw;
+  background-color: #f0f0f0;
+  z-index: 10;
+  text-align: center;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+input {
+  width: 40%;
+  height: 10%;
+  margin: 1rem;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  background: transparent;
+  font-family: "Montserrat";
+}
+
+textarea {
+  margin-top: 2rem;
+  width: 85%;
+  height: 20%;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat";
+  padding: 5px;
+  resize: none;
+}
+
+input,
+textarea {
+  transform: translateY(2rem);
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+::placeholder {
+  opacity: 0.4;
+}
+
+.close-btn {
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  margin: 0.5rem;
+  top: 0;
+  right: 0;
+  opacity: 0.3;
+}
+
+.close-btn:hover {
+  opacity: 1;
+}
+.close-btn:before, .close-btn:after {
+  position: absolute;
+  content: ' ';
+  right: 15px;
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close-btn:before {
+  transform: rotate(45deg);
+}
+.close-btn:after {
+  transform: rotate(-45deg);
+}
+
+.slide-enter,
+.slide-enter-done {
+  animation: fadeIn 0.2s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slide-exit-active {
+  animation: fadeOut 0.2s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

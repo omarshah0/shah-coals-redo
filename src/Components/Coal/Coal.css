@@ -1,0 +1,49 @@
+.chart {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: auto 1rem;
+}
+
+.chart h1 {
+  
+  font-family: "Montserrat";
+  color: #707070;
+  margin-top: 0;
+}
+
+.chart li {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  font-family: sans-serif;
+  padding: 0;
+  color: #707070;
+  display: block;
+}
+
+li h5 {
+  margin: 1% 0;
+  padding: 0;
+}
+
+li h5 {
+  font-size: calc(8px + (15 - 8) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.bar {
+  background: #2f2f2f;
+  display: block;
+  height: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.bar span {
+  height: 2rem;
+  float: left;
+  background: #a9a9a9;
+}
