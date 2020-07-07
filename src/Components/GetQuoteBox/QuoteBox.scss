@@ -12,63 +12,67 @@
   border: 3px solid rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   overflow-y: auto;
-}
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 1);
 
-input {
-  width: 40%;
-  height: 10%;
-  margin: 1rem;
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  background: transparent;
-  font-family: "Montserrat";
-}
+  input {
+    width: 40%;
+    height: 10%;
+    margin: 1rem;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    background: transparent;
+    font-family: "Montserrat";
+  }
 
-textarea {
-  margin-top: 2rem;
-  width: 85%;
-  height: 20%;
-  background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  font-family: "Montserrat";
-  padding: 5px;
-  resize: none;
-}
+  textarea {
+    margin-top: 2rem;
+    width: 85%;
+    height: 20%;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-family: "Montserrat";
+    padding: 5px;
+    resize: none;
+  }
 
-input,
-textarea {
-  transform: translateY(2rem);
-}
+  input,
+  textarea {
+    transform: translateY(2rem);
+  }
 
-input[type="submit"] {
-  cursor: pointer;
-}
+  input[type="submit"] {
+    cursor: pointer;
+  }
 
-input:focus,
-textarea:focus {
-  outline: none;
-}
+  input:focus,
+  textarea:focus {
+    outline: none;
+  }
 
-::placeholder {
-  opacity: 0.4;
-}
+  ::placeholder {
+    opacity: 0.4;
+  }
 
-.close-btn {
-  width: 33px;
-  height: 33px;
-  position: absolute;
-  margin: 0.5rem;
-  top: 0;
-  right: 0;
-  opacity: 0.3;
+  .close-btn {
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    margin: 0.5rem;
+    top: 0;
+    right: 0;
+    opacity: 0.3;
+  }
 }
 
 .close-btn:hover {
   opacity: 1;
 }
-.close-btn:before, .close-btn:after {
+.close-btn:before,
+.close-btn:after {
   position: absolute;
-  content: ' ';
+  content: " ";
   right: 15px;
   height: 33px;
   width: 2px;

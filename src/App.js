@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 // Import of Functional Components
 import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
 import Body from "./Components/Body/Body";
 import About from "./Components/About/About";
 import Products from "./Components/Products/Products";
@@ -14,7 +15,6 @@ import error404 from "./Components/404/404";
 import "./App.css";
 
 function App() {
-
   return (
     <div className="App">
       <Header />
@@ -33,6 +33,7 @@ function App() {
           </TransitionGroup>
         )}
       />
+      <Footer />
     </div>
   );
 }

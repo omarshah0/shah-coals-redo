@@ -7,7 +7,7 @@ function QuoteBox(props) {
     last_name: "",
     phone_number: "",
     email: "",
-    text_area: ""
+    text_area: "",
   });
 
   const [formData, updateFormData] = React.useState(initialFormData);

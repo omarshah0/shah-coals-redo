@@ -12,9 +12,11 @@
   border: 3px solid rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   overflow-y: auto;
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 26px 0px black;
 }
 
-input {
+.quote-box input {
   width: 40%;
   height: 10%;
   margin: 1rem;
@@ -24,7 +26,7 @@ input {
   font-family: "Montserrat";
 }
 
-textarea {
+.quote-box textarea {
   margin-top: 2rem;
   width: 85%;
   height: 20%;
@@ -35,38 +37,38 @@ textarea {
   resize: none;
 }
 
-input,
-textarea {
+.quote-box input,
+.quote-box textarea {
   -webkit-transform: translateY(2rem);
           transform: translateY(2rem);
 }
 
-input[type="submit"] {
+.quote-box input[type="submit"] {
   cursor: pointer;
 }
 
-input:focus,
-textarea:focus {
+.quote-box input:focus,
+.quote-box textarea:focus {
   outline: none;
 }
 
-::-webkit-input-placeholder {
+.quote-box ::-webkit-input-placeholder {
   opacity: 0.4;
 }
 
-:-ms-input-placeholder {
+.quote-box :-ms-input-placeholder {
   opacity: 0.4;
 }
 
-::-ms-input-placeholder {
+.quote-box ::-ms-input-placeholder {
   opacity: 0.4;
 }
 
-::placeholder {
+.quote-box ::placeholder {
   opacity: 0.4;
 }
 
-.close-btn {
+.quote-box .close-btn {
   width: 33px;
   height: 33px;
   position: absolute;
@@ -80,9 +82,10 @@ textarea:focus {
   opacity: 1;
 }
 
-.close-btn:before, .close-btn:after {
+.close-btn:before,
+.close-btn:after {
   position: absolute;
-  content: ' ';
+  content: " ";
   right: 15px;
   height: 33px;
   width: 2px;

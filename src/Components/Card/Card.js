@@ -5,9 +5,9 @@ import "./Card.css";
 
 function Card(props) {
   return (
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
+    <div className="flip-card">
+      <div className="flip-card-inner">
+        <div className="flip-card-front">
           <h1>{props.name}</h1>
           <img src={img_avatar} alt="Avatar" />
           <p>{props.text}</p>
