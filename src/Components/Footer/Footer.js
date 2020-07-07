@@ -20,7 +20,7 @@ function Footer() {
           <a href="https://www.twitter.com/shahcoals" target="__blank">
             <img src={twitter} alt="follow-twitter"></img>
           </a>
-          <a href="tel: +923351320333" target="__blank">
+          <a href="https://api.whatsapp.com/send?phone=+923336483355">
             <img src={whatsapp} alt="follow-whatsapp"></img>
           </a>
         </div>

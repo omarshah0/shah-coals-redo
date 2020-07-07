@@ -1,5 +1,15 @@
 .cta-button {
   margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cta-button a {
+  position: relative;
 }
 
 .cta-button .btn {
@@ -9,15 +19,15 @@
   outline: 0;
   /* styles */
   position: relative;
-  background: linear-gradient(45deg, #D38312 10%, #A83279 90%);
+  background: linear-gradient(45deg, #d38312 10%, #a83279 90%);
   background-size: 200% 100%;
   padding: 1.5rem 2rem;
   color: white;
   border-radius: 100px;
   font-size: 1.2rem;
   font-family: "Montserrat";
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   cursor: pointer;
 }
 
@@ -48,19 +58,5 @@
   100% {
     background-position: 0 0;
   }
-}
-
-.cta-button a {
-  display: table;
-  margin: 25px auto;
-  text-decoration: none;
-  color: #3c3c3c;
-  font-family: "Source Code Pro";
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.cta-button a:hover {
-  color: white;
 }
 /*# sourceMappingURL=Button.css.map */
