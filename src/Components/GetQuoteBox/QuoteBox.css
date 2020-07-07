@@ -2,24 +2,21 @@
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 20vh;
-  bottom: 20vh;
-  left: 20vw;
-  right: 20vw;
+  top: 10vh;
+  bottom: 10vh;
+  left: 5vw;
+  right: 5vw;
   background-color: #f0f0f0;
   z-index: 10;
   text-align: center;
   border: 3px solid rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  overflow-y: auto;
-  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 26px 0px black;
 }
 
 .quote-box input {
-  width: 40%;
+  width: calc(100% - 10vw);
   height: 10%;
-  margin: 1rem;
+  margin: 0.4rem;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   background: transparent;
@@ -28,8 +25,8 @@
 
 .quote-box textarea {
   margin-top: 2rem;
-  width: 85%;
-  height: 20%;
+  width: calc(100% - 10vw);
+  height: 10%;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.5);
   font-family: "Montserrat";
@@ -37,14 +34,15 @@
   resize: none;
 }
 
-.quote-box input,
-.quote-box textarea {
-  -webkit-transform: translateY(2rem);
-          transform: translateY(2rem);
-}
-
-.quote-box input[type="submit"] {
-  cursor: pointer;
+.quote-box .close-btn {
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  background-color: salmon;
+  margin: 0.5rem;
+  top: 0;
+  right: 0;
+  opacity: 0.3;
 }
 
 .quote-box input:focus,
@@ -68,44 +66,64 @@
   opacity: 0.4;
 }
 
-.quote-box .close-btn {
-  width: 33px;
-  height: 33px;
-  position: absolute;
-  margin: 0.5rem;
-  top: 0;
-  right: 0;
-  opacity: 0.3;
-}
-
-.close-btn:hover {
-  opacity: 1;
-}
-
-.close-btn:before,
-.close-btn:after {
-  position: absolute;
-  content: " ";
-  right: 15px;
-  height: 33px;
-  width: 2px;
-  background-color: #333;
-}
-
-.close-btn:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.close-btn:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.slide-enter,
-.slide-enter-done {
-  -webkit-animation: fadeIn 0.2s forwards;
-          animation: fadeIn 0.2s forwards;
+@media only screen and (min-width: 600px) {
+  .quote-box {
+    top: 20vh;
+    bottom: 20vh;
+    left: 20vw;
+    right: 20vw;
+    background-color: #f0f0f0;
+    overflow-y: auto;
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 26px 0px black;
+  }
+  .quote-box input {
+    width: 40%;
+    height: 10%;
+    margin: 1rem;
+  }
+  .quote-box textarea {
+    margin-top: 2rem;
+    width: 85%;
+    height: 20%;
+  }
+  .quote-box input,
+  .quote-box textarea {
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+  .quote-box input[type="submit"] {
+    cursor: pointer;
+  }
+  .quote-box input:focus,
+  .quote-box textarea:focus {
+    outline: none;
+  }
+  .quote-box .close-btn:before,
+  .quote-box .close-btn:after {
+    position: absolute;
+    content: " ";
+    right: 15px;
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  .quote-box .close-btn:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .quote-box .close-btn:after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .close-btn:hover {
+    opacity: 1;
+  }
+  .slide-enter,
+  .slide-enter-done {
+    -webkit-animation: fadeIn 0.2s forwards;
+            animation: fadeIn 0.2s forwards;
+  }
 }
 
 @-webkit-keyframes fadeIn {
